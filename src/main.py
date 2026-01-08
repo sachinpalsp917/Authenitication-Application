@@ -10,6 +10,7 @@ from core.exceptions import (
     validation_exception_handler,
     general_exception_handler
 )
+from services.email import EmailService
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
